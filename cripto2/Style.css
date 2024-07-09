@@ -1,0 +1,121 @@
+/* Geral */
+body {
+    font-family: 'Rajdhani', sans-serif; /* Fonte futurista */
+    background: linear-gradient(to bottom right, #222, #454545); /* Gradiente de fundo escuro */
+    color: #00FF00; /* Cor do texto verde neon */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 0 0 10px #00FF00; /* Sombra verde neon no texto */
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column; /* Empilhamento vertical em telas pequenas */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px; /* Largura máxima do container */
+}
+
+/* Mensagens */
+.mensagens {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Quebra de linha para telas menores */
+    gap: 20px; /* Espaçamento entre os personagens */
+}
+
+/* Personagens */
+.personagem {
+    background-color: #333; /* Fundo escuro para os personagens */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Sombra verde neon */
+}
+
+.personagem img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.personagem textarea {
+    width: calc(100% - 20px); /* Largura responsiva */
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #222; /* Fundo escuro para o textarea */
+    color: #00FF00; /* Cor do texto verde neon */
+    border: 1px solid #00FF00; /* Borda verde neon */
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #00FF00; /* Fundo verde neon */
+    color: #222; /* Cor do texto escura */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hacker Alerta */
+#hacker-alerta {
+    color: red;
+    display: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+    .mensagens {
+        flex-direction: column; /* Empilha os personagens verticalmente */
+    }
+
+    .personagem {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+

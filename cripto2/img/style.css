@@ -1,0 +1,121 @@
+/* Estilos Gerais */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  flex: 1; /* Ocupa o espaço restante */
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around; /* Distribui os artigos */
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Estilos dos Artigos (Personagens) */
+article {
+  width: 45%; /* Largura responsiva */
+  max-width: 400px; /* Largura máxima */
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    flex-direction: row; /* Mantém os artigos em linha */
+    flex-wrap: wrap;    /* Permite que os artigos quebrem para a próxima linha se necessário */
+    overflow-x: auto;   /* Adiciona uma barra de rolagem horizontal se os artigos não couberem */
+  }
+
+  article {
+    flex: 0 0 45%; /* Define a largura mínima dos artigos em 45% */
+    margin-bottom: 1rem; 
+  }
+}
+
+figure {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+  height: auto;
+  border-radius: 50%; /* Faz a imagem ficar redonda */
+}
+
+figcaption {
+  font-style: italic;
+}
+
+.computer {
+  background-image: url('images/computer.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px; /* Altura do computador */
+  margin-bottom: 1rem;
+}
+
+.message-box {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  resize: vertical;
+  box-sizing: border-box; /* Inclui padding e border na largura */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; /* Empilha os artigos em telas menores */
+    align-items: center;
+  }
+
+  article {
+    width: 90%; /* Largura maior em telas menores */
+    margin-bottom: 1rem;
+  }
+}
+
