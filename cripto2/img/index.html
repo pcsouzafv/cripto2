@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Mensagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Decodificador de Mensagens</h1>
+  </header>
+
+  <main>
+    <section>
+      <article class="sender">
+        <figure>
+          <img src="homem.jpeg" alt="Homem digitando">
+          <figcaption>Remetente</figcaption>
+        </figure>
+        <div class="computer"></div>
+        <div class="message-box">
+          <label for="inputMessage">Mensagem:</label>
+          <textarea id="inputMessage" placeholder="Digite sua mensagem..."></textarea>
+          <div class="buttons">
+            <button id="encryptButton">Criptografar</button>
+            <button id="decryptButton">Descriptografar</button>
+            <button id="sendButton">Enviar</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="receiver">
+        <figure>
+          <img src="mulher.jpeg" alt="Mulher recebendo mensagem">
+          <figcaption>Destinatário</figcaption>
+        </figure>
+        <div class="computer"></div>
+        <div class="message-box">
+          <label for="receivedMessage">Mensagem Recebida:</label>
+          <textarea id="receivedMessage" placeholder="Mensagem recebida..." readonly></textarea>
+          <div class="buttons">
+            <button id="encryptReceivedButton">Criptografar</button>
+            <button id="decryptReceivedButton">Descriptografar</button>
+            <button id="clearButton">Limpar</button> 
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Ricardo Souza - 2024</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Mensagens Criptografadas</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Troca de Mensagens Criptografadas</h1>
+    </header>
+
+    <div class="container">
+        <div class="mensagens">
+            <div class="personagem homem">
+                <img src="./img/homem.jpeg" alt="Homem">
+                <textarea id="mensagem-homem" placeholder="Digite sua mensagem..."></textarea>
+                <div class="botoes">
+                    <button onclick="criptografar('homem')">Criptografar</button>
+                    <button onclick="descriptografar('homem')">Descriptografar</button>
+                    <button onclick="limpar('homem')">Limpar</button>
+                    <button onclick="enviar('homem')">Enviar</button>
+                </div>
+            </div>
+
+            <div class="personagem hacker">
+                <img src="./img/hacker.png" alt="Hacker">
+                <p id="hacker-alerta">Não consegui entender nada!</p>
+            </div>
+
+            <div class="personagem mulher">
+                <img src="./img/mulher.jpeg" alt="Mulher">
+                <textarea id="mensagem-mulher" placeholder="Mensagem recebida..."></textarea>
+                <div class="botoes">
+                    <button onclick="criptografar('mulher')">Criptografar</button>
+                    <button onclick="descriptografar('mulher')">Descriptografar</button>
+                    <button onclick="limpar('mulher')">Limpar</button>
+                    <button onclick="enviar('mulher')">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Criado por Ricardo Souza</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
+
+
+
